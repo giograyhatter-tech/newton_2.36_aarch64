@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/root/newton-2.36/build/cmake_install.cmake",
+		"/root/newton-2.36/build/coreLibrary_200/cmake_install.cmake",
+		"/root/newton-2.36/build/coreLibrary_200/source/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -126,7 +126,7 @@ if (MSVC)
 endif(MSVC)
 
 if (CMAKE_COMPILER_IS_GNUCC)
-  add_definitions(-fpic -msse -msse3 -msse4 -mfpmath=sse -ffloat-store -ffast-math -freciprocal-math -funsafe-math-optimizations -fsingle-precision-constant -c -Wall -Wno-strict-aliasing)
+  add_definitions(-fpic -ffast-math -funsafe-math-optimizations -Wall -Wno-strict-aliasing -D_SCALAR_ARITHMETIC_ONLY)
 endif(CMAKE_COMPILER_IS_GNUCC)
 
 if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")

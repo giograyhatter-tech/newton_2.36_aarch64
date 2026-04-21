@@ -197,6 +197,11 @@ dgCpuClass dgApi dgGetCpuType ()
 
 }
 
+#elif defined(__aarch64__) || defined(__arm__)
+dgCpuClass dgApi dgGetCpuType()
+{
+  return dgNoSimdPresent;
+}
 #else
 /*	#define cpuid(func,ax,bx,cx,dx)	__asm__ __volatile__ ("cpuid": "=a" (ax), "=b" (bx), "=c" (cx), "=d" (dx) : "a" (func)); */
 

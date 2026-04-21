@@ -58,6 +58,7 @@ static inline void dgSpinLock(dgInt32 *spin)
 
 inline void dgSpinUnlock(dgInt32 *spin)
 {
+  __sync_synchronize();
   *spin = 0;
 }
 
